@@ -6,6 +6,9 @@ puts "Exercise 3"
 puts "----------"
 
 # Your code goes here ...
-Store.find_by(id: 3).destroy
+@store3 = Store.find_by(id: 3)
+@store3.destroy
 pp Store.find_by(id: 3)
 pp Store.count
+
+pp @store3
